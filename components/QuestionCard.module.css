@@ -1,0 +1,113 @@
+.container {
+  width: 100%;
+}
+
+.question {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option,
+.optionSelected,
+.optionCorrect,
+.optionWrong {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  padding: 14px 18px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  background: #f7fafc;
+  cursor: pointer;
+  text-align: left;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+}
+
+.option:hover:not(:disabled) {
+  border-color: #667eea;
+  background: #ebf4ff;
+  transform: translateX(4px);
+}
+
+.optionSelected {
+  border-color: #667eea;
+  background: #ebf4ff;
+}
+
+.optionCorrect {
+  border-color: #48bb78;
+  background: #f0fff4;
+  cursor: default;
+}
+
+.optionWrong {
+  border-color: #fc8181;
+  background: #fff5f5;
+  cursor: default;
+}
+
+.optionLetter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e2e8f0;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #4a5568;
+  flex-shrink: 0;
+}
+
+.optionCorrect .optionLetter {
+  background: #48bb78;
+  color: white;
+}
+
+.optionWrong .optionLetter {
+  background: #fc8181;
+  color: white;
+}
+
+.optionText {
+  flex: 1;
+  color: #2d3748;
+  font-weight: 500;
+}
+
+.icon {
+  font-size: 1.2rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.optionCorrect .icon {
+  color: #48bb78;
+}
+
+.optionWrong .icon {
+  color: #fc8181;
+}
+
+.explanation {
+  margin-top: 20px;
+  padding: 16px;
+  background: #fffbeb;
+  border: 1px solid #f6e05e;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  color: #744210;
+  line-height: 1.6;
+}
