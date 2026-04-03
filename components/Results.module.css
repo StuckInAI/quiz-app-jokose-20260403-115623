@@ -1,0 +1,137 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.scoreSection {
+  text-align: center;
+  padding: 24px 0;
+}
+
+.emoji {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.message {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #2d3748;
+  margin-bottom: 20px;
+}
+
+.scoreCircle {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
+}
+
+.scoreNumber {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.scoreLabel {
+  font-size: 0.8rem;
+  opacity: 0.9;
+  margin-top: 4px;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reviewTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 4px;
+}
+
+.reviewItemCorrect,
+.reviewItemWrong {
+  padding: 14px 16px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+.reviewItemCorrect {
+  background: #f0fff4;
+  border: 1px solid #9ae6b4;
+}
+
+.reviewItemWrong {
+  background: #fff5f5;
+  border: 1px solid #feb2b2;
+}
+
+.reviewQuestion {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.reviewIcon {
+  font-size: 1rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.reviewItemCorrect .reviewIcon {
+  color: #48bb78;
+}
+
+.reviewItemWrong .reviewIcon {
+  color: #fc8181;
+}
+
+.reviewDetails {
+  margin-top: 8px;
+  padding-left: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.yourAnswer {
+  color: #e53e3e;
+  font-size: 0.85rem;
+}
+
+.correctAnswer {
+  color: #38a169;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.restartButton {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.restartButton:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
